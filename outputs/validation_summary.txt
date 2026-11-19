@@ -1,0 +1,11 @@
+FINAL CHECK SUMMARY
+B1 complete TODO: PASS – exact expected cleaning and normalisation output.
+B1 full pipeline: PASS – small before/after edge cases, cleaning counters, SQLite stations/readings schema, executemany inserts, three SQL questions, daily summary, four charts, interpretations, and CSV-vs-pandas cleaning + min-max benchmark at 1k/100k/1m rows.
+B2 complete TODO: PASS – expected values 54.0, 108.0 and None.
+B2 adversarial program: PASS – missing column, wrong delimiter, UTF-16 encoding, empty file, quote-containing station, unsafe SQL concatenation and safe parameterised query.
+B3: PASS – plain Python uses csv.DictReader, pandas uses read_csv/groupby, SQL uses SQLite GROUP BY; results agree on small data; 1/12/120 station benchmarks and cProfile report generated.
+B4 complete TODO: PASS – matches the four assignment example labels.
+B4 main program: PASS – 50 complaints processed, summaries compared, composite index measured and query plan checked.
+B4 human-label agreement: PENDING – the assignment requires the student to read and label all 50 complaints in TaskB4/data/manual_complaint_labels.csv.
+Laptop execution and screenshots: PENDING – run the programs on your own computer and capture required screenshots.
+Register number: verify 1924260076 before submission.

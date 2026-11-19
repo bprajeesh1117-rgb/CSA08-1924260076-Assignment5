@@ -1,0 +1,49 @@
+B1 – SMALL EDGE-CASE FILE: BEFORE CLEANING
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': '8', 'pm25': '48', 'pm10': '70', 'no2': '18', 'temperature': '86', 'temperature_unit': 'F'}
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': '9', 'pm25': 'NA', 'pm10': '72', 'no2': '19', 'temperature': '87', 'temperature_unit': 'F'}
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': '10', 'pm25': '', 'pm10': '75', 'no2': '20', 'temperature': '88', 'temperature_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '8', 'pm25': '95', 'pm10': '110', 'no2': '30', 'temperature': '86', 'temperature_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '9', 'pm25': '-5', 'pm10': '112', 'no2': '31', 'temperature': '87', 'temperature_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '10', 'pm25': '121', 'pm10': '140', 'no2': '35', 'temperature': '88', 'temperature_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '10', 'pm25': '121', 'pm10': '140', 'no2': '35', 'temperature': '88', 'temperature_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '11', 'pm25': '1200', 'pm10': '150', 'no2': '40', 'temperature': '89', 'temperature_unit': 'F'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': '8', 'pm25': 'high', 'pm10': '100', 'no2': '15', 'temperature': '31', 'temperature_unit': 'C'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': '9', 'pm25': '50', 'pm10': '-3', 'no2': '1600', 'temperature': '32', 'temperature_unit': 'C'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': '10', 'pm25': '60', 'pm10': '110', 'no2': '18', 'temperature': '32', 'temperature_unit': 'C'}
+{'station': ' adyar ', 'date': '2026-10-01', 'hour': '11', 'pm25': '49', 'pm10': '75', 'no2': '21', 'temperature': '30', 'temperature_unit': 'C'}
+{'station': 'Guindy', 'date': '2026-13-01', 'hour': '12', 'pm25': '55', 'pm10': '80', 'no2': '20', 'temperature': '30', 'temperature_unit': 'C'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': '25', 'pm25': '55', 'pm10': '80', 'no2': '20', 'temperature': '30', 'temperature_unit': 'C'}
+
+B1 – SMALL EDGE-CASE FILE: AFTER CLEANING
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': 8, 'pm25': 48.0, 'pm10': 70.0, 'no2': 18.0, 'temperature_c': 30.0, 'source_unit': 'F'}
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': 9, 'pm25': 48.0, 'pm10': 72.0, 'no2': 19.0, 'temperature_c': 30.555555555555557, 'source_unit': 'F'}
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': 10, 'pm25': 48.0, 'pm10': 75.0, 'no2': 20.0, 'temperature_c': 31.11111111111111, 'source_unit': 'F'}
+{'station': 'Adyar', 'date': '2026-10-01', 'hour': 11, 'pm25': 49.0, 'pm10': 75.0, 'no2': 21.0, 'temperature_c': 30.0, 'source_unit': 'C'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': 8, 'pm25': 95.0, 'pm10': 110.0, 'no2': 30.0, 'temperature_c': 30.0, 'source_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': 9, 'pm25': 95.0, 'pm10': 112.0, 'no2': 31.0, 'temperature_c': 30.555555555555557, 'source_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': 10, 'pm25': 121.0, 'pm10': 140.0, 'no2': 35.0, 'temperature_c': 31.11111111111111, 'source_unit': 'F'}
+{'station': 'Guindy', 'date': '2026-10-01', 'hour': 11, 'pm25': 121.0, 'pm10': 150.0, 'no2': 40.0, 'temperature_c': 31.666666666666668, 'source_unit': 'F'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': 8, 'pm25': 55.0, 'pm10': 100.0, 'no2': 15.0, 'temperature_c': 31.0, 'source_unit': 'C'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': 9, 'pm25': 50.0, 'pm10': 100.0, 'no2': 15.0, 'temperature_c': 32.0, 'source_unit': 'C'}
+{'station': 'T Nagar', 'date': '2026-10-01', 'hour': 10, 'pm25': 60.0, 'pm10': 110.0, 'no2': 18.0, 'temperature_c': 32.0, 'source_unit': 'C'}
+
+Edge-case quality counters: {'fahrenheit_converted': 8, 'missing_or_non_numeric_pm25': 3, 'impossible_pm25': 2, 'duplicate_rows_skipped': 1, 'impossible_pm10': 1, 'impossible_no2': 1, 'rejected_invalid_date': 1, 'rejected_invalid_hour': 1, 'imputed_pm25': 5, 'imputed_pm10': 1, 'imputed_no2': 1}
+
+Monthly input rows: 8640
+Monthly cleaned rows: 8640
+Monthly quality counters: {'fahrenheit_converted': 1440, 'missing_or_non_numeric_pm25': 1, 'impossible_pm25': 2, 'missing_or_non_numeric_pm10': 1, 'missing_or_non_numeric_no2': 1, 'imputed_pm25': 3, 'imputed_no2': 1, 'imputed_pm10': 1}
+Q1 – Adyar October average PM2.5 [(36.30555555555556,)]
+Q2 – Highest station/day mean PM2.5 [('Egmore', '2026-10-20', 75.58333333333333)]
+Q3 – Valid PM2.5 readings per station [('Adyar', 720), ('Ambattur', 720), ('Anna Nagar', 720), ('Egmore', 720), ('Guindy', 720), ('Mylapore', 720), ('Perungudi', 720), ('Porur', 720), ('Sholinganallur', 720), ('T Nagar', 720), ('Tambaram', 720), ('Velachery', 720)]
+
+1. Line chart: the highest city-wide daily mean in this sample occurs on 2026-10-06 (59.01 µg/m³). The daily line shows how the city-wide mean changes across October.
+2. Bar chart: Egmore has the highest mean station reading in this sample (69.30 µg/m³). Bar heights make differences between stations easy to compare.
+3. Scatter plot: the Pearson correlation between temperature and PM2.5 in this sample is -0.083. This indicates the strength and direction of a linear association, not proof that temperature causes pollution.
+4. Box plot: hour 18 has the highest median PM2.5 in this sample. The box plots also show spread and outliers across hours.
+These results describe the supplied synthetic demonstration dataset only; they must not be presented as real city measurements.
+
+Cleaning + min-max benchmark 1,000 rows: CSV 0.0106s; pandas 0.0031s; valid=998
+Cleaning + min-max benchmark 100,000 rows: CSV 1.2467s; pandas 0.0591s; valid=99856
+Cleaning + min-max benchmark 1,000,000 rows: CSV 12.4511s; pandas 0.3073s; valid=998549
+CSV-vs-pandas cleaning and normalisation measurements saved to /mnt/data/CSA08-1924260076-Assignment5/outputs/b1_cleaning_benchmark.csv
+Saved database, cleaned CSVs, SQL results, summary, charts and cleaning benchmarks in /mnt/data/CSA08-1924260076-Assignment5/outputs

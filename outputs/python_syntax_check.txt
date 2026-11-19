@@ -1,0 +1,7 @@
+PASS TaskB3/task_b3.py
+PASS TaskB2/complete_code_b2.py
+PASS TaskB2/task_b2.py
+PASS TaskB1/task_b1.py
+PASS TaskB1/complete_code_b1.py
+PASS TaskB4/complete_code_b4.py
+PASS TaskB4/task_b4.py

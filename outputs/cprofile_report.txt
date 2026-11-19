@@ -1,0 +1,28 @@
+         109193 function calls in 0.036 seconds
+
+   Ordered by: cumulative time
+   List reduced from 67 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.006    0.006    0.036    0.036 /mnt/data/CSA08-1924260076-Assignment5/TaskB3/task_b3.py:32(python_csv_group)
+     8641    0.010    0.000    0.017    0.000 /usr/lib/python3.13/csv.py:174(__next__)
+      360    0.000    0.000    0.010    0.000 /usr/lib/python3.13/statistics.py:472(mean)
+      360    0.003    0.000    0.008    0.000 /usr/lib/python3.13/statistics.py:158(_sum)
+     8642    0.004    0.000    0.005    0.000 {built-in method builtins.next}
+     8640    0.001    0.000    0.002    0.000 /usr/lib/python3.13/statistics.py:291(_exact_ratio)
+      360    0.000    0.000    0.002    0.000 {built-in method builtins.sum}
+    17281    0.002    0.000    0.002    0.000 /usr/lib/python3.13/csv.py:160(fieldnames)
+     8640    0.001    0.000    0.001    0.000 {method 'setdefault' of 'dict' objects}
+      360    0.000    0.000    0.001    0.000 /usr/lib/python3.13/fractions.py:663(forward)
+    17282    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+      360    0.000    0.000    0.001    0.000 /usr/lib/python3.13/fractions.py:677(reverse)
+     8640    0.001    0.000    0.001    0.000 {method 'as_integer_ratio' of 'float' objects}
+     1080    0.001    0.000    0.001    0.000 /usr/lib/python3.13/fractions.py:203(__new__)
+     8640    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+      720    0.000    0.000    0.001    0.000 /usr/lib/python3.13/statistics.py:207(<genexpr>)
+     8640    0.001    0.000    0.001    0.000 {method 'get' of 'dict' objects}
+     1082    0.000    0.000    0.001    0.000 {built-in method builtins.isinstance}
+      360    0.000    0.000    0.001    0.000 /usr/lib/python3.13/statistics.py:337(_convert)
+      360    0.000    0.000    0.000    0.000 /usr/lib/python3.13/fractions.py:808(_div)
+
+

@@ -1,0 +1,68 @@
+Complaints processed: 50
+positive | Roads are clean and the bus was fast.
+negative | Smoke from the factory makes the air bad.
+negative | The staff were not helpful.
+positive | Not bad, service improved.
+negative | The road is dirty near the market.
+positive | Air quality is good today.
+negative | Buses are slow and the service is rude.
+negative | Factory smoke is making residents worried.
+positive | Cleaning improved the street near the school.
+negative | The monitoring sensor is broken.
+negative | The area is not clean near the school.
+positive | The response team was helpful.
+negative | Traffic is bad and air is dirty.
+negative | Never good when smoke covers the area.
+positive | The new buses are fast.
+negative | Waterlogging makes roads dirty.
+positive | Officials were helpful and not rude.
+positive | Air is clean in the morning.
+negative | Pollution is bad near the factory.
+neutral  | Service improved but buses are slow.
+negative | Smoke levels are high today.
+negative | The complaint app is broken.
+positive | Road cleaning is good.
+negative | The office response was not helpful.
+positive | Air quality improved this week.
+negative | Traffic is slow near the bridge.
+negative | Factory smoke is bad for residents.
+positive | Staff are helpful and polite.
+negative | Roads are dirty after rain.
+positive | Monitoring is fast and helpful.
+positive | Not bad after the cleanup.
+negative | Air is not clean near the bus stand.
+neutral  | Service is good but roads are dirty.
+negative | Smoke is bad and the response is slow.
+positive | The new system improved reporting.
+negative | Officials were never helpful.
+positive | Clean roads make the area better.
+negative | Broken sensors report wrong values.
+positive | Bus service is fast and clean.
+negative | Not good near the industrial area.
+negative | Pollution is bad today.
+negative | Staff fixed the broken sensor.
+positive | Air quality is clean near the park.
+neutral  | Response was slow but staff were helpful.
+negative | Never clean around the dumping area.
+positive | There is a good improvement in bus frequency.
+negative | Factory smoke remains a problem.
+neutral  | The app is fast but sometimes broken.
+positive | Service was not slow; the team was helpful.
+positive | Roads are clean after maintenance.
+
+Manual agreement NOT calculated: 50 labels are still blank/invalid.
+Read each complaint in data/complaints.csv, fill data/manual_complaint_labels.csv with positive/negative/neutral, and rerun B4.
+
+Extractive frequency summary (top 5 sentences):
+Smoke from the factory makes the air bad. Not bad, service improved. The area is not clean near the school. Air is not clean near the bus stand. Service was not slow; the team was helpful.
+
+First-five-sentences baseline:
+Roads are clean and the bus was fast. Smoke from the factory makes the air bad. The staff were not helpful. Not bad, service improved. The road is dirty near the market.
+
+200 query runs before composite index: 1.587481 s
+200 query runs after composite index:  0.000332 s
+Query plan before index: [(3, 0, 0, 'SCAN readings')]
+Query plan after index:  [(4, 0, 0, 'SEARCH readings USING INDEX idx_station_day (station=? AND day=?)')]
+
+Production scale: 12 existing + 100 additional stations = 112 stations.
+At 96 readings per station per day: 10,752 readings/day and 3,924,480 readings/year (365 days).

@@ -1,0 +1,27 @@
+
+Missing column
+ERROR: missing columns ['pm25']
+
+Wrong delimiter
+ERROR: missing columns ['date', 'pm25', 'station']
+
+Different encoding (UTF-16 read as UTF-8)
+ERROR: UnicodeDecodeError 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+Empty file
+ERROR: empty file or missing header
+
+Expected completed-code query results:
+54.0 108.0
+None
+Unsafe query for a quote-containing name failed: near "s": syntax error
+Safe query for a quote-containing name: [("King's Park", 40.0)]
+Unsafe concatenated SQL result count: 5
+Safe parameterised injection result: None
+
+Sentiment adversarial tests:
+neutral  | Great job, officials!
+negative | This is not never good.
+neutral  | The air is clean but the roads are dirty.
+negative | Not good near the factory.
+Limitation: a small lexicon misses sarcasm and complex/double negation and may cancel mixed opinions.
