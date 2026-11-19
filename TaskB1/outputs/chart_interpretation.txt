@@ -1,0 +1,5 @@
+1. Line chart: the highest city-wide daily mean in this sample occurs on 2026-10-06 (59.01 µg/m³). The daily line shows how the city-wide mean changes across October.
+2. Bar chart: Egmore has the highest mean station reading in this sample (69.30 µg/m³). Bar heights make differences between stations easy to compare.
+3. Scatter plot: the Pearson correlation between temperature and PM2.5 in this sample is -0.083. This indicates the strength and direction of a linear association, not proof that temperature causes pollution.
+4. Box plot: hour 18 has the highest median PM2.5 in this sample. The box plots also show spread and outliers across hours.
+These results describe the supplied synthetic demonstration dataset only; they must not be presented as real city measurements.

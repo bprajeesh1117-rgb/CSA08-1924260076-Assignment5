@@ -1,0 +1,9 @@
+Q1 – Adyar October average PM2.5
+[(36.30555555555556,)]
+
+Q2 – Highest station/day mean PM2.5
+[('Egmore', '2026-10-20', 75.58333333333333)]
+
+Q3 – Valid PM2.5 readings per station
+[('Adyar', 720), ('Ambattur', 720), ('Anna Nagar', 720), ('Egmore', 720), ('Guindy', 720), ('Mylapore', 720), ('Perungudi', 720), ('Porur', 720), ('Sholinganallur', 720), ('T Nagar', 720), ('Tambaram', 720), ('Velachery', 720)]
+
