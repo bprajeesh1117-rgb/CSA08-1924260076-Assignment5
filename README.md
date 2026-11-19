@@ -1,26 +1,13 @@
 # CSA08-1924260076-Assignment5
 
 **Student:** Prajeesh B.  
-**Register Number:** 1924260076 *(verify this before submission)*  
+**Register Number:** 1924260076  
 **Course Outcome:** CO5 – Data Acquisition, Cleaning, Analysis and AI Applications
 
 ## Software and libraries
 - Python 3.12 or later (the prepared scripts were checked with Python 3.13.5)
 - pandas 2.2.3
 - matplotlib 3.10.8
-- Standard-library modules: `csv`, `sqlite3`, `statistics`, `datetime`, `time`, `timeit`, `cProfile`, `pstats`, `collections`, `re`, `pathlib`, `io`, `tempfile`, `logging`
-
-Install the listed third-party libraries:
-```powershell
-python -m pip install -r requirements.txt
-```
-
-To check the versions installed on your laptop:
-```powershell
-python --version
-python -c "import pandas, matplotlib; print('pandas', pandas.__version__); print('matplotlib', matplotlib.__version__)"
-```
-Update the versions above if your laptop reports different versions.
 
 ## Task folders and run commands
 Run commands from this repository's root folder in the VS Code terminal.
@@ -43,10 +30,4 @@ Run commands from this repository's root folder in the VS Code terminal.
 - `TaskB4/data/manual_complaint_labels.csv`: fill the `your_label` column after reading each complaint yourself; then rerun B4 to calculate your agreement. Do not claim an agreement percentage before completing this.
 - `outputs/`: generated SQLite database, cleaned CSV files, charts, SQL summaries, timing results and profiling output.
 
-## Important execution and submission notes
-1. Execute every program on your own laptop and capture your own VS Code screenshots. The output text files are logs, not substitutes for screenshots.
-2. B3 timings depend on your laptop. Use the values generated in your own `outputs/b3_benchmark_results.csv` in your final report.
-3. In B4, fill the 50 manual labels yourself. The program deliberately does not invent a human-agreement score.
-4. Check the register number and Python/library versions before submission.
-5. Create the required GitHub repository and make a separate commit for Part A, B1, B2, B3 and B4. Add your faculty as a collaborator if the repository is private.
-6. Add the working GitHub URL to your report cover page.
+
