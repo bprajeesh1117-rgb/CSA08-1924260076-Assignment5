@@ -1,0 +1,40 @@
+Small-data correctness (CSV loops == pandas == SQL): True
+Running-sum alternative agrees: True
+
+1 station(s), 8,760 readings
+Python csv loops            0.0151 s
+pandas read_csv/groupby     0.0177 s
+SQLite load + GROUP BY      0.0210 s
+
+12 station(s), 105,120 readings
+Python csv loops            0.1636 s
+pandas read_csv/groupby     0.0550 s
+SQLite load + GROUP BY      0.3583 s
+
+120 station(s), 1,051,200 readings
+Python csv loops            1.9439 s
+pandas read_csv/groupby     0.3699 s
+SQLite load + GROUP BY      2.8767 s
+
+Top cProfile entries (cumulative time):
+         109193 function calls in 0.036 seconds
+
+   Ordered by: cumulative time
+   List reduced from 67 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.006    0.006    0.036    0.036 /mnt/data/CSA08-1924260076-Assignment5/TaskB3/task_b3.py:32(python_csv_group)
+     8641    0.010    0.000    0.017    0.000 /usr/lib/python3.13/csv.py:174(__next__)
+      360    0.000    0.000    0.010    0.000 /usr/lib/python3.13/statistics.py:472(mean)
+      360    0.003    0.000    0.008    0.000 /usr/lib/python3.13/statistics.py:158(_sum)
+     8642    0.004    0.000    0.005    0.000 {built-in method builtins.next}
+     8640    0.001    0.000    0.002    0.000 /usr/lib/python3.13/statistics.py:291(_exact_ratio)
+      360    0.000    0.000    0.002    0.000 {built-in method builtins.sum}
+    17281    0.002    0.000    0.002    0.000 /usr/lib/python3.13/csv.py:160(fieldnames)
+     8640    0.001    0.000    0.001    0.000 {method 'setdefault' of 'dict' objects}
+      360    0.000    0.000    0.001    0.000 /usr/lib/python3.13/fractions.py:663(forward)
+    17282    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+      360    0.000    0.000    0.001    0.000 /usr/lib/python3.13/fractions.py:677(reverse)
+
+Benchmark table saved to /mnt/data/CSA08-1924260076-Assignment5/outputs/b3_benchmark_results.csv
+Profile report saved to /mnt/data/CSA08-1924260076-Assignment5/outputs/cprofile_report.txt
